@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>New Course</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb" class="m-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Courses</li>
+                <li class="breadcrumb-item active" aria-current="page">New Course</li>
+            </ol>
+        </nav>
+        <div class="m-5">
+            <h1 class="m-3">Create New Course</h1>
+            <form class="row m-1">
+                <h2 class="col-12">Course Information:</h2>
+                <div class="col-12 m-2">
+                    <label for="course_id">Course ID:</label>
+                    <input class="form-control" type="number" name="course_id" id="course_id"
+                        placeholder="enter course id...">
+                </div>
+                <div class="col-12 m-2">
+                    <label for="course_title">Course Title:</label>
+                    <input class="form-control" type="text" name="course_title" id="course_title"
+                        placeholder="enter course title...">
+                </div>
+                <div class="col-12 m-2">
+                    <label for="course_credits">Course Credits:</label>
+                    <input class="form-control" type="number" name="course_credits" id="course_credits"
+                        placeholder="enter course credits...">
+                </div>
+                <div class="col-12 m-2">
+                    <label for="course_department">Department:</label>
+                    <input class="form-control" type="text" name="course_department" id="course_department"
+                        placeholder="enter department..." list="departments">
+                        <datalist id="departments">
+
+                        </datalist>
+                </div>
+
+                <hr>
+
+                <h3 class="col-12">Doctor Information:</h3>
+
+                <div class="col-12 m-2">
+                        <label for="doctor">Doctor:</label>
+                        <input class="form-control" type="text" name="doctor" id="doctor"
+                            placeholder="enter doctor..." list="doctors">
+                        <datalist id="doctors">
+
+                        </datalist>
+                    </div>
+
+                <hr>
+
+                <div class="col-3 m-2">
+                    <button class="btn btn-primary w-100" onclick="onSave()" type="button">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="course-new.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>New Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb" class="m-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Projects</li>
+                <li class="breadcrumb-item active" aria-current="page">New Course</li>
+            </ol>
+        </nav>
+        <div class="m-5">
+            <h1 class="m-3">Create New Project</h1>
+            <form class="row m-1">
+                <h2 class="col-12">Project Information:</h2>
+                <div class="col-12 m-1">
+                    <label for="course">Course ID:</label>
+                    <select class="form-control" type="number" name="course" id="course" placeholder="select course...">
+                        <option value="">--select course--</option>
+                    </select>
+                </div>
+                <div class="col-12 m-1">
+                    <a class="btn btn-light" href="../course-new/course-new.html">Add New Course</a>
+                </div>
+                <div class="col-12 m-2">
+                    <label for="description">Breif Description:</label>
+                    <textarea class="form-control" name="description" id="description"
+                        placeholder="enter project description..." rows="3"></textarea>
+                </div>
+                <div class="col-5 m-2">
+                    <label for="start_date">Start Date</label>
+                    <input class="form-control" type="date" name="start_date" id="start_date"
+                        placeholder="enter start date...">
+                </div>
+                <div class="col-5 m-2">
+                    <label for="delevary_date">Delevary Date</label>
+                    <input class="form-control" type="date" name="delevary_date" id="delevary_date"
+                        placeholder="enter delevary date...">
+                </div>
+                <div class="col-5 m-2">
+                    <label for="grade">Grade:</label>
+                    <input class="form-control" type="number" name="grade" id="grade" placeholder="enter grade...">
+                </div>
+                <div class="col-5 m-2">
+                    <label for="full_grade">Full Grade:</label>
+                    <input class="form-control" type="number" name="full_grade" id="full_grade"
+                        placeholder="enter full grade...">
+                </div>
+            </form>
+
+
+            <div class="row mt-3 border-top" id="students-form">
+                <h3 class="col-12">Students Group:</h3>
+                <datalist id="students">
+
+                </datalist>
+                <div class="col-12 m-2">
+                    <button class="btn btn-dark" onclick="addStudentField()">Add a Student</button>
+                </div>
+
+                <div class="col-12 m-2">
+                    <input class="form-control student" type="text" name="student0" id="student0"
+                        placeholder="enter student name..." list="students">
+                </div>
+            </div>
+
+            <div class="row border-top">
+                <div class="col-3 m-2">
+                    <button class="btn btn-primary w-100" onclick="onSave()" type="button">Save</button>
+                </div>
+            </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <script src="project-new.js"></script>
+</body>
+
+</html>

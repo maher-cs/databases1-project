@@ -1,0 +1,5 @@
+.form-control:disabled {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}

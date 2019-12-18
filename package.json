@@ -1,0 +1,23 @@
+{
+  "name": "upm",
+  "version": "1.0.0",
+  "description": "a program to manage the projects of university courses",
+  "main": "app.js",
+  "scripts": {
+    "electron": "./node_modules/electron/dist/electron",
+    "electron-dist": "electron-builder",
+    "electron-packer": "electron-builder --dir"
+  },
+  "author": "MHD Maher Azloul",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "fix-path": "^2.1.0",
+    "oracledb": "^4.0.1"
+  },
+  "devDependencies": {
+    "electron": "^7.1.2",
+    "electron-packager": "^14.1.1",
+    "electron-builder": "^21.2.0"
+  }
+}

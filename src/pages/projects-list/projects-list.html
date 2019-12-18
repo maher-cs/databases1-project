@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+  <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Projects List</title>
+</head>
+
+<body>
+  <div class="container">
+      <nav aria-label="breadcrumb" class="m-3">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+              <li class="breadcrumb-item" aria-current="page">Projects</li>
+              <li class="breadcrumb-item active" aria-current="page">Projects List</li>
+          </ol>
+      </nav>
+    <div class="m-5">
+      <div class="row mt-5">
+        <h3 class="col-12 m-2">Projects:</h3>
+        <a class="btn btn-primary col-12 m-2" href="../project-new/project-new.html">+ Add New Project</a>
+        <div class="col-4 mt-1 mb-2">
+          <input value="" class="form-control" type="text" name="filter-course" id="filter-course" placeholder="enter course title...">
+        </div>
+        <div class="col-4 mt-1 mb-2">
+          <select value="" class="form-control" type="text" name="filter-status" id="filter-status" placeholder="enter status...">
+            <option value="" default>--select--</option>
+          </select>
+        </div>
+
+        <div class="col-2 mt-1 mb-2">
+          <button class="btn btn-dark w-100" onclick="applayFilters()">Applay</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Project ID</th>
+              <th scope="col">Course</th>
+              <th scope="col">Status</th>
+              <th scope="col">Description</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">Delevary Date</th>
+              <th scope="col">Grade</th>
+              <th scope="col">Full Grade</th>
+            </tr>
+          </thead>
+          <tbody id="projects-table-data">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="projects-list.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+  <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Courses List</title>
+</head>
+
+<body>
+  <div class="container">
+      <nav aria-label="breadcrumb" class="m-3">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+              <li class="breadcrumb-item" aria-current="page">Courses</li>
+              <li class="breadcrumb-item active" aria-current="page">Courses List</li>
+          </ol>
+      </nav>
+    <div class="m-5">
+      <div class="row mt-5">
+        <h3 class="col-12 m-2">Courses:</h3>
+        <a class="btn btn-primary col-12 m-2" href="../course-new/course-new.html">+ Add New Course</a>
+        <div class="col-3 mt-1 mb-2">
+          <input value="" class="form-control" type="text" name="filter-course-title" id="filter-course-title" placeholder="enter course title...">
+        </div>
+        <div class="col-3 mt-1 mb-2">
+          <input value="" class="form-control" type="text" name="filter-course-department" id="filter-course-department" placeholder="enter department...">
+        </div>
+        <div class="col-3 mt-1 mb-2">
+          <input value="" class="form-control" type="text" name="filter-course-doctor" id="filter-course-doctor" placeholder="enter doctor name...">
+        </div>
+        <div class="col-3 mt-1 mb-2">
+          <button class="btn btn-dark w-100" onclick="applayFilters()">Applay</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Course ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Credits</th>
+              <th scope="col">Department</th>
+              <th scope="col">Doctor</th>
+              <th scope="col">Number of Projects</th>
+            </tr>
+          </thead>
+          <tbody id="courses-table-data">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="courses-list.js"></script>
+</body>
+
+</html>

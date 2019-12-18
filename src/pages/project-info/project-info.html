@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy"  content="script-src 'self' 'unsafe-inline' app: 'unsafe-eval';">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project-info.css">
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb" class="m-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../../index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Projects</li>
+                <li class="breadcrumb-item active" aria-current="page">Project Information</li>
+            </ol>
+        </nav>
+        <div class="row m-2">
+            <h1 class="col-6">Project Information</h1>
+            <div class="col-2">
+                <span class="badge ml-5 mt-3" id="status"></span>
+            </div>
+
+            <button class="col-2 btn btn-success m-2">Mark As Completed</button>
+        </div>
+        <div class="row m-2">
+            <div class="col-12 m-2">
+                <label for="course_title">Course Title:</label>
+                <input class="form-control  my-editable" type="text" name="course_title" id="course_title"
+                    placeholder="enter course title..." disabled>
+            </div>
+            <div class="col-12 m-2">
+                <label for="description">Breif Description:</label>
+                <textarea class="form-control" name="description" id="description"
+                    placeholder="enter project description..." rows="3" disabled></textarea>
+            </div>
+            <div class="col-5 m-2">
+                <label for="start_date">Start Date</label>
+                <input class="form-control" type="text" name="start_date" id="start_date"
+                    placeholder="enter start date..." disabled>
+            </div>
+            <div class="col-5 m-2">
+                <label for="delevary_date">Delevary Date</label>
+                <input class="form-control" type="text" name="delevary_date" id="delevary_date"
+                    placeholder="enter delevary date..." disabled>
+            </div>
+            <div class="col-5 m-2">
+                <label for="grade">Grade:</label>
+                <input class="form-control" type="number" name="grade" id="grade" placeholder="enter grade..." disabled>
+            </div>
+            <div class="col-5 m-2">
+                <label for="full_grade">Full Grade:</label>
+                <input class="form-control" type="number" name="full_grade" id="full_grade"
+                    placeholder="enter full grade..." disabled>
+            </div>
+        </div>
+        <div class="row m-2 mt-5" id="students-list">
+            <h2 class="col-12">students:</h2>
+            
+        </div>
+    </div>
+
+    <script src="project-info.js"></script>
+</body>
+
+</html>
